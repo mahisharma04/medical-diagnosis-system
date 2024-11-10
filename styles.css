@@ -1,0 +1,156 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling for main business name */
+header .logo {
+    font-size: 2.5em; /* Large text */
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+}
+
+/* Navigation styling */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    color: #007bff;
+}
+
+/* Button styling in header */
+header .btn.start-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .btn.start-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Main content section styling */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f7fa;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-content .highlight {
+    color: #007bff;
+}
+
+.text-content p {
+    color: #555;
+    font-size: 1.1em;
+    margin: 10px 0 20px;
+}
+
+.text-content ul {
+    list-style-type: none;
+    padding: 0;
+    color: #333;
+}
+
+.text-content ul li {
+    position: relative;
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+.text-content ul li::before {
+    content: "✔";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.text-content .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.text-content .btn:hover {
+    background-color: #0056b3;
+}
+
+.image-content {
+    width: 400px;
+    height: 300px;
+    background-color: #e7f0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    header .logo {
+        font-size: 2em; /* Slightly smaller on mobile */
+    }
+
+    header nav {
+        gap: 10px;
+    }
+
+    header nav a {
+        font-size: 0.9em;
+    }
+}

@@ -118,16 +118,36 @@ header .btn.start-btn:hover {
     background-color: #0056b3;
 }
 
-.image-content {
-    width: 400px;
-    height: 300px;
-    background-color: #e7f0ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    color: #999;
+.image-content img {
+    width: 100%;
+    height: auto;
 }
+
+#aboutUsBox {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 60px; /* Adjusted position below the button */
+    left: 20px; 
+    right: 20px; /* To give some margin from both sides */
+    width: auto;
+    max-width: 400px; /* Limit the box width */
+    overflow: hidden;
+    height: 0px; /* Start from 0px for animation */
+    transition: height 0.5s ease-out, padding 0.5s ease-out;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+#aboutUsBox p {
+    margin: 0;
+    padding-top: 10px;
+}
+
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
